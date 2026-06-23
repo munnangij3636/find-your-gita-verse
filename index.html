@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Find Your Gita Verse</title>
+  <meta name="description" content="Discover the Bhagavad Gita verse meant for your moment." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="page-glow"></div>
+
+  <header class="hero">
+    <nav class="nav">
+      <a class="brand" href="#top" aria-label="Find Your Gita Verse home">
+        <span class="om">ॐ</span>
+        <span>Find Your Gita Verse</span>
+      </a>
+      <div class="nav-actions">
+        <a href="#verses">Verses</a>
+        <a href="#about">About</a>
+      </div>
+    </nav>
+
+    <section id="top" class="hero-content">
+      <p class="eyebrow">Bhagavad Gita Wisdom</p>
+      <h1>Discover the verse meant for your moment.</h1>
+      <p class="subtitle">Search by emotion, challenge, or situation and open a related Bhagavad Gita sloka for guidance.</p>
+      <div class="search-wrap">
+        <span>🔍</span>
+        <input id="searchInput" type="search" placeholder="Search worry, lonely, courage, peace, work..." />
+      </div>
+    </section>
+  </header>
+
+  <main>
+    <section class="intro" id="about">
+      <div class="lotus">✦</div>
+      <h2>How are you feeling today?</h2>
+      <p>Select a life situation below and read the matching sloka from the Bhagavad Gita.</p>
+    </section>
+
+    <section id="verses" class="cards" aria-live="polite"></section>
+  </main>
+
+  <footer>
+    <p>Made with devotion · Read, reflect, and apply with humility.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
